@@ -1,0 +1,43 @@
+.card-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(198, 143, 235);
+    border: 1px solid rgb(143, 53, 161);
+    border-radius: 5px;
+    cursor: pointer;
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out;
+    place-items:center;
+    position: relative;
+}
+
+.card-image {
+    width:100%;
+    border-radius: 5px;
+}
+
+.card-container:hover {
+    animation: diagonal .5s forwards;
+}
+
+@-webkit-keyframes diagonal {
+    0%       { transform: translatex(0) translatey(0) }
+    100%     { transform: translatex(15px) translatey(-15px); }
+}
+
+@-moz-keyframes diagonal {
+    0%       { transform: translatex(0) translatey(0) }
+    100%     { transform: translatex(15px) translatey(-15px); }
+}
+
+@-o-keyframes diagonal {
+    0%       { transform: translatex(0) translatey(0) }
+    100%     { transform: translatex(15px) translatey(-15px); }
+}
+
+@keyframes diagonal {
+    0%       { transform: translatex(0) translatey(0) }
+    100%     { transform: translatex(15px) translatey(-15px); }
+}

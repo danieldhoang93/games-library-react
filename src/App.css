@@ -1,7 +1,11 @@
 .App {
   text-align: center;
 }
-
+ h1 {
+   font-family: Quicksand;
+   font-size: 72px;
+   color:rgb(165, 115, 185);
+ }
 .App-logo {
   height: 40vmin;
   pointer-events: none;
